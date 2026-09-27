@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "frontier-ai-compiler-kernel"
+version = "0.1.0"
+description = "Algorithmic Solvers for Frontier AI Silicon, Polyhedral Compilers, Megatron 4D Parallelism, and Speculative Decoding"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+authors = [
+    { name = "DeepMind & Antigravity Advanced Agentic Systems" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: System :: Hardware",
+]
+dependencies = []
+
+[project.scripts]
+ai-compiler-kernel = "frontier_ai_compiler_kernel.cli:main"
